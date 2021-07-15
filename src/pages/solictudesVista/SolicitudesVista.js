@@ -80,7 +80,7 @@ function SolicitudesVista(){
 
     const EnablebuttonImprimir=(quotitation)=>{
         if(quotitation.status=="Aceptado"){
-            const urlQuotitation = "http://127.0.0.1:8000/api/requestquotitationpdf/"+quotitation.id;
+            const urlQuotitation = "https://tis-sistema-cotizacion-backend.herokuapp.com/api/requestquotitationpdf/"+quotitation.id;
             return(
                 <button className="dropdown-item">
                     <a target="true" href={urlQuotitation} style={{textDecoration:'none',padding:'0px', color:"#000"}}><Printer/> Imprimir cotización</a>

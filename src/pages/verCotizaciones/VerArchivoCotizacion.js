@@ -7,7 +7,7 @@ function VerArchivoCotizacion(){
     const {aux} = useParams();
     const {fl} = useParams();
 
-    const file = 'http://127.0.0.1:8000/api/quotation/showFiles/detail/'+fl;
+    const file = 'https://tis-sistema-cotizacion-backend.herokuapp.com/api/quotation/showFiles/detail/'+fl;
     const [type, setType] = useState("")
 
     useEffect(() => {
@@ -26,9 +26,9 @@ function VerArchivoCotizacion(){
     const getRuta = () => {
         console.log(aux)
         if(aux==1){
-            return('http://127.0.0.1:8000/api/quotation/showFiles/detail/'+fl)
+            return('https://tis-sistema-cotizacion-backend.herokuapp.com/api/quotation/showFiles/detail/'+fl)
         }else{
-            return('http://127.0.0.1:8000/api/ua/quotation/showFiles/detail/'+fl)
+            return('https://tis-sistema-cotizacion-backend.herokuapp.com/api/ua/quotation/showFiles/detail/'+fl)
         }
     }
 
